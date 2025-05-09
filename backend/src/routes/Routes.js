@@ -3,6 +3,8 @@ const { registerUser, loginUser, getUsers } = require("../controllers/userContro
 const verifyToken = require("../../middleware/verifyToken");
 const router = express.Router();
 
+
+//controle de usuario
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 router.get("/", getUsers);

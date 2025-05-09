@@ -8,4 +8,9 @@ app.use(express.json());
 
 app.use("/api/users", userRoutes);
 
+const productRoutes = require("./routes/productRoutes");
+app.use("/api/products", productRoutes);
+
+
+
 module.exports = app;
