@@ -9,8 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 // Rotas
-app.use("/api", userRoutes);               // ex: /api/users
-app.use("/api/products", productRoutes);   // ex: /api/products
+app.use("/api", userRoutes);          
+app.use("/api/products", productRoutes);
 
 const sequelize = require("./config/database");
 
